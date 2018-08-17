@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 import {AppRegistry, StyleSheet ,View, Text} from 'react-native';
+import {createStore} from 'react-redux'
 
+export default class Root extends Component {
+    renderApp(){
+        const initialState = window.__INITIAL_STATE__;
+        const store = createStore(initialState)
 
-class Main extends Component{
-    render(){
-        return(
-            <View>
-                <Text>I like Grab rather than Uber</Text>
-            </View>
+        return (
+            <div></div>
         )
     }
+    
+    render(){
+            return this.renderApp();
+    }
 }
-
-export default Main;
