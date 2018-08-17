@@ -1,7 +1,36 @@
-/** @format */
-import React, {Component} from 'react'
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 
-AppRegistry.registerComponent(appName, () => App);
+import Root from "./src/main";
+export default class TaxiApp extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Root {...this.props}/>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
+
+AppRegistry.registerComponent('TaxiApp', () => TaxiApp);

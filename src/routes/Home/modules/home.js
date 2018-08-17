@@ -10,7 +10,7 @@ export function setName(){
     }
 }
 
-function handleState(state, action){
+function handleSetName(state, action){
     return update(state, {
         name: {
             $set:action.payload

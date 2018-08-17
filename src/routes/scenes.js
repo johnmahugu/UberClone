@@ -7,3 +7,5 @@ const scenes = Actions.create(
         <Scene key="" component={HomeContainer} title="home" initial />
     </Scene>
 )
+
+export default scenes;

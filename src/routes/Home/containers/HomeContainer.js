@@ -9,4 +9,4 @@ const mapStateToProps = (state) => ({
 const mapActionCreators = {
     setName
 };
-export default connect(mapStateToProps, mapActionCreators)(Home)
+export default connect(mapStateToProps, mapActionCreators)(Home);
