@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {AppRegistry, StyleSheet ,View, Text} from 'react-native';
-import {createStore} from 'react-redux'
+import createStore from './store/createStore';
+import AppContainer from './AppContainer';
+
 
 export default class Root extends Component {
     renderApp(){
@@ -8,7 +9,7 @@ export default class Root extends Component {
         const store = createStore(initialState)
 
         return (
-            <div></div>
+            <AppContainer store={store} />
         )
     }
     

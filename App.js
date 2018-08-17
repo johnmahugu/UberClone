@@ -7,16 +7,15 @@
  */
 
 import React, {Component} from 'react';
-import {AppRegistry, StyleSheet, Text, View} from 'react-native';
-import Main from './src/main';
+import Root from './src/main';
 
 export default class TaxiApp extends Component {
   render(){
     return(
       <View style={styles.container}>
-        <Main />
+        <Root {...this.props} />
       </View>
-    )
+    );
   }
 }
 
