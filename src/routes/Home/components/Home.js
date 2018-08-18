@@ -8,7 +8,7 @@ import MapContainer from './MapContainer';
 class Home extends Component {
 
     componentDidMount(){
-        this.props.setName();
+        this.props.getCurrentLocation();
     }
 
     render(){
