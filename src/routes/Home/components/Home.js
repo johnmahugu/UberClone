@@ -13,13 +13,13 @@ class Home extends Component {
 
     render(){
         const region = {
-            latitude: 4.210484,
-            longitude: 101.975769,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421
+            latitude: 3.146642,
+            longitude: 101.695845,
+            latitudeDelta:0.0922,
+            longitudeDelta:0.0421
         }
         return(
-            <Container style={{flex:1, justifyContent:"center", alignItems:"center"}}>
+            <Container>
                 <MapContainer region={region}/>
             </Container>
         )

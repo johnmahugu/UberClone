@@ -1,6 +1,7 @@
 import React from 'react';
-import {ViewabilityConfig} from 'react-native';
+import { View } from 'react-native';
 import MapView from  'react-native-maps';
+
 import styles from './MapContainerStyles';
 
 export const MapContainer = ({region}) => {
@@ -11,7 +12,13 @@ export const MapContainer = ({region}) => {
                 style={styles.map}
                 region={region}
             >
+                <MapView.Marker
+                    coordinate={region}
+                    pinColor="red"
+                />
             </MapView>
         </View>
     )
 }
+
+export default MapContainer;
