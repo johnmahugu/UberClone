@@ -21,7 +21,7 @@ class Home extends Component {
         return(
             <Container>
                 {this.props.region.latitude &&
-                <MapContainer region={region}/>
+                <MapContainer region={this.props.region}/>
                 }
             </Container>
         )
